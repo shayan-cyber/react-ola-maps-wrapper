@@ -1,0 +1,33 @@
+{
+  "name": "react-ola-maps-wrapper",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rimraf dist",
+    "build": "npm run clean && rollup -c --bundleConfigAsCjs"
+  },
+  "author": "shayan-cyber",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^26.0.1",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@types/react": "^18.3.5",
+    "@types/react-dom": "^18.3.0",
+    "react": "^18.3.1",
+    "rimraf": "^6.0.1",
+    "rollup-plugin-dts": "^6.1.1",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "tslib": "^2.7.0",
+    "typescript": "^5.5.4"
+  },
+  "dependencies": {
+    "rollup": "^4.21.2",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}
